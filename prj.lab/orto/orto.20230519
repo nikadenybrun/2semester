@@ -1,0 +1,35 @@
+#include <iostream>
+#include <sstream>
+
+class Quad {
+public:
+	Quad(int x, int y, int w, int h);
+	void SetW(int);
+	void SetH(int);
+	int GetW() const;
+	int GetH() const;
+	
+private:
+	int x_;
+	int y_;
+	int w_;
+	int h_;
+}
+
+
+
+void Quad::SetW(int w) {
+	w_ = w;
+}
+int Quad::GetW() const {
+	return w_;
+}
+void Quad::SetH(int h) {
+	h_ = h;
+
+
+}
+int Quad::GetH() const{
+	return h_;
+}
+
